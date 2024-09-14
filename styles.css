@@ -40,12 +40,10 @@ a {
         rgba(130, 57, 255, 1),
         rgba(72, 59, 192, 1)
     );
-    background-position: bottom;
-    background-size: 100% 2px;
-    background-repeat: no-repeat;
-    text-decoration: none;
-    -webkit-text-fill-color: transparent;
+    background-clip: text;
     -webkit-background-clip: text;
+    color: transparent;
+    text-decoration: none;
 }
 
 .btn {
