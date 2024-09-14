@@ -44,6 +44,8 @@ a {
     background-size: 100% 2px;
     background-repeat: no-repeat;
     text-decoration: none;
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
 }
 
 .btn {
