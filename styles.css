@@ -54,6 +54,8 @@ a {
     text-decoration: none;
     border-radius: 0.25em;
     transition: background-color 0.3s;
+    -webkit-background-clip: initial;
+    background-clip: initial;
 }
 
 .btn:hover {
