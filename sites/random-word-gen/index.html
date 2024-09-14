@@ -1,0 +1,17 @@
+<div id="Word"></div>
+
+<script>
+async function setRandomWord() {
+    try {
+        const response = await fetch('https://raw.githubusercontent.com/dwyl/english-words/master/words.txt');
+        const text = await response.text();
+        const words = text.split('\n');
+        const randomWord = words[Math.floor(Math.random() * words.length)];
+        document.getElementById('Word').textContent = randomWord;
+    } catch (error) {
+	document.getElementById('Word').textContent = "Unable to fetch random word";
+        console.error('Error fetching words:', error);
+    }
+}
+setRandomWord();
+</script>
